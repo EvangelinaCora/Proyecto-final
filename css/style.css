@@ -10,7 +10,6 @@
   padding: 8px;
 }
 
-
 /* ayuda bs*/
 .main-acordion {
   margin-top: 3rem;
@@ -21,7 +20,8 @@
 
 .acordeon-boton {
 
-  background-color: black;
+
+  background-color: rgb(235, 131, 95);
   color: white;
   border: none;
   font-family: sans-serif;
@@ -41,7 +41,7 @@
   padding-left: 20px;
   font-size: 20px;
   font-family: sans-serif;
-  background-color: rgb(234, 240, 209);
+  background-color: white;
   border-radius: 8px;
 }
 
@@ -63,21 +63,19 @@ body {
 
 
 main {
-  background-color: beige;
+  background-color: white;
   background-repeat: repeat;
 }
 
 main video {
   width: 70%;
-  height: 70%;
-
   padding-bottom: 2rem;
 }
 
-
-.harry-inicio {
-  width: 450px;
+iframe {
+  width: 100%;
 }
+
 
 .columna-horizontal {
   display: flex;
@@ -85,6 +83,11 @@ main video {
   justify-content: space-between;
   height: 350px;
   background-image: url(../imagenes/tamaño-correcto/inicio/fondo\ gris.jpg);
+}
+
+
+.harry-inicio {
+  width: 40%;
 }
 
 .descripcion-harry {
@@ -146,20 +149,24 @@ main video {
 }
 
 .columna img {
-  height: 90%;
-  width: 70%;
+  height: 100%;
+  width: 60%;
 }
 
 .columna .descripcion {
   margin-left: 3rem;
 }
 
+.batman {
+  color: white;
+}
 
-main h1 {
+.proximamente h1 {
   font-size: 40px;
   color: white;
   font-family: "Jost", sans-serif;
   margin-top: 1rem;
+  margin-right: 35rem;
 }
 
 main h2 {
@@ -175,7 +182,11 @@ main p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../imagenes/tamaño-correcto/inicio/fondo\ borroso\ \(2\).jpg);
+  background: rgb(235, 131, 95);
+  background: linear-gradient(90deg, rgba(235, 131, 95, 1) 0%, rgba(236, 158, 105, 1) 32%, rgb(242, 186, 161) 100%);
+  /* background: rgb(150,191,244);
+  background: radial-gradient(circle, rgba(150,191,244,1) 49%, rgba(30,88,212,1) 100%); */
+  /* background-image: url(../imagenes/tamaño-correcto/inicio/fondo\ borroso\ \(2\).jpg); */
 }
 
 .inicio {
@@ -321,13 +332,7 @@ footer li a {
   font-family: serif;
 }
 
-/* contacto */
-.contacto-container {
-  height: 80%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+/* info */
 
 .contacto {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -346,54 +351,110 @@ footer li a {
 
 .datos ul li {
   padding-right: 15px;
+  color: #e2956f;
 }
 
 .datos ul li i {
   padding-right: 5px;
 }
 
-.formulario {
-  font-family: serif;
-  font-size: 20px;
+.logos {
+  background: rgb(235, 131, 95);
+  background: linear-gradient(90deg, rgba(235, 131, 95, 1) 0%, rgba(236, 158, 105, 1) 32%, rgba(249, 211, 193, 1) 100%);
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.box {
-  border: 1px solid black;
-  margin-bottom: 1rem;
-  background-color: white;
-  border-radius: 5px;
-}
-
-.box p {
-  padding-left: 1rem;
-}
-
-.caja {
-  border: solid 1px black;
-}
-
-/* ayuda */
-.ayuda-container {
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  height: 80%;
 }
 
-.pregunta-container {
-  padding: 0 0 0 1rem;
+.logos img {
+
+  width: 15rem;
+
+
 }
 
-.pregunta {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 30px;
+
+
+
+
+
+/* nosotros */
+
+.historia h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #e2956f;
+  margin-top: 2rem;
+  margin-left: 30rem;
 }
 
-.pregunta-container p {
-  font-size: 20px;
+.imagen {
+  width: 13%;
+  border-radius: 100%;
+  margin-left: 2rem;
+  display: inline;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+  border: solid 4px #e2956f;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 3px 41px 3px rgba(230,163,127,0.75);
+  -webkit-box-shadow: 0px 3px 41px 3px rgba(230,163,127,0.75);
+  -moz-box-shadow: 0px 3px 41px 3px rgba(230,163,127,0.75);
+
+}
+
+.info-mia {
+  margin-left: 2rem;
+  margin-right: 3rem;
+}
+
+.info-mia p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #e2956f;
+}
+
+.info-mia h3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #e2956f;
+}
+
+.cantidad {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+
+
+}
+
+.cantidad p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+  color: #e2956f;
+}
+
+.botones-nosotros {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+
+}
+
+.botones-nosotros button {
+  background-color: #e2956f;
+  border-radius: 4px;
+  border-color: #e2956f;
+}
+
+.botones-nosotros a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
 }
 
 /* otros */
@@ -401,11 +462,9 @@ footer li a {
   margin-top: 1rem;
 }
 
+/* mi media */
 @media (max-width:576px) {
 
-  .harry-inicio {
-    width: 60%;
-  }
 
   .container-funkos {
     grid-template-columns: repeat(1, 1fr);
@@ -424,3 +483,132 @@ footer li a {
     padding: 0 1rem;
   }
 }
+
+
+/* animaciones codepen */
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 48px;
+  margin-left: 35rem;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(60deg, rgb(242, 123, 83) 0%, #e2956f 32%);
+  color: white;
+
+}
+
+
+
+.inner-header {
+  height: 45vh;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax>use {
+  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 576px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+
+  .content {
+    height: 30vh;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+.harry-prod img{ 
+  width: 16rem;
+  margin-left: 30rem;
+}
+
+.harry-prod{
+  background-image: url(../imagenes/funko/proximamente/harry\ potter.jpg);
+  margin-bottom: 3rem;
+}
+
+
