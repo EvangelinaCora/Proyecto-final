@@ -1,0 +1,51 @@
+/* info */
+
+.informacion {
+    background: rgb(46, 16, 10);
+    background: linear-gradient(90deg, rgba(46, 16, 10, 1) 14%, rgba(102, 55, 42, 1) 70%, rgba(153, 114, 99, 1) 95%);
+    height: 7rem;
+  
+    h1 {
+      color: white;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      padding-top: 1.5rem;
+    }
+  }
+  
+  .contacto {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style: none;
+    color: black;
+  }
+  
+  .datos ul {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  
+    li {
+      padding-right: 15px;
+      color: rgb(102, 55, 42, 1);
+  
+      i {
+        padding-right: 5px;
+      }
+    }
+  }
+  
+  .logos {
+    background: rgb(46, 16, 10);
+    background: linear-gradient(90deg, rgba(46, 16, 10, 1) 14%, rgba(102, 55, 42, 1) 70%, rgba(153, 114, 99, 1) 95%);
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+  
+    img {
+      width: 20%;
+    }
+  }
