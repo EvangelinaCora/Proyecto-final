@@ -214,10 +214,6 @@ section img {
   height: 200px;
 }
 
-* {
-  display: none;
-}
-
 footer {
   background-color: black;
   display: flex;
