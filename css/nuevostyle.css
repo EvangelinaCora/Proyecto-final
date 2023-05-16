@@ -1,4 +1,21 @@
 @charset "UTF-8";
+.datos ul, footer, .columna, .columna-horizontal, .columna-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards-nosotros, .informacion h1, .producto-imagenes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sobre-nosotros, .logos, .informacion, .columna-principal {
+  background: rgb(46, 16, 10);
+  background: linear-gradient(90deg, rgb(46, 16, 10) 14%, rgb(102, 55, 42) 70%, rgb(153, 114, 99) 95%);
+}
+
 /* bs */
 .nav-link-name {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -61,13 +78,6 @@ main {
   background-repeat: repeat;
 }
 
-.columna-principal {
-  background: rgb(46, 16, 10);
-  background: linear-gradient(90deg, rgb(46, 16, 10) 14%, rgb(102, 55, 42) 70%, rgb(153, 114, 99) 95%);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .columna-principal div {
   display: flex;
   flex-direction: column;
@@ -75,29 +85,26 @@ main {
 }
 .columna-principal h1 {
   color: white;
-  font-family: "jost";
+  font-family: "Jost", sans-serif;
   font-size: 25px;
 }
 .columna-principal h2 {
   color: white;
-  font-family: "Jost";
+  font-family: "Jost", sans-serif;
   font-size: 25px;
 }
 
-.blackpanter {
+.tambor {
   width: 30%;
 }
 
 .columna-horizontal {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   height: 350px;
   background-image: url(../imagenes/tamaño-correcto/inicio/fondo\ gris.jpg);
 }
 
 .harry-inicio {
-  width: 40%;
+  width: 35%;
 }
 
 .descripcion-harry {
@@ -119,22 +126,13 @@ main {
 .boton-harry {
   text-decoration: none;
   color: black;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Jost", sans-serif;
 }
 .boton-harry:hover {
   background-color: white;
 }
 .boton-harry:hover a {
   color: black;
-}
-
-.harry-prod {
-  background-image: url(../imagenes/funko/proximamente/harry\ potter.jpg);
-  margin-bottom: 3rem;
-}
-.harry-prod img {
-  width: 16rem;
-  margin-left: 30rem;
 }
 
 .container-funkos {
@@ -144,8 +142,6 @@ main {
 }
 
 .columna {
-  display: flex;
-  align-items: center;
   height: 100%;
 }
 
@@ -174,40 +170,8 @@ main h2, main p {
   font-family: "Jost", sans-serif;
 }
 
-.proximamente {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: rgb(235, 131, 95);
-  background: linear-gradient(90deg, rgb(235, 131, 95) 0%, rgb(236, 158, 105) 32%, rgb(242, 186, 161) 100%);
-}
-
-.inicio {
-  display: flex;
-  justify-content: space-evenly;
-}
-.inicio img {
-  padding: 15px;
-}
-
-.favoritos {
-  background-color: rgb(240, 207, 166);
-  font-size: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-.favoritos img {
-  padding: 15px;
-}
-.favoritos h2 {
-  width: 55%;
-}
-
 section h2 {
-  color: rgb(0, 0, 0);
+  color: black;
 }
 section img {
   width: 200px;
@@ -216,10 +180,6 @@ section img {
 
 footer {
   background-color: black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100px;
 }
 footer img {
   padding-left: 1rem;
@@ -284,14 +244,56 @@ footer li a {
 }
 
 .producto-imagenes {
-  display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   padding: 1rem 0;
 }
 
 #primer-producto {
   padding-bottom: 3rem;
+}
+
+/* otros */
+.otros-card {
+  margin-top: 1rem;
+}
+
+/* info */
+.informacion {
+  height: 7rem;
+}
+.informacion h1 {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-top: 1.5rem;
+}
+
+.contacto {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  list-style: none;
+  color: black;
+}
+
+.datos ul {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  list-style: none;
+  padding: 0;
+}
+.datos ul li {
+  padding-right: 15px;
+  color: rgb(102, 55, 42);
+}
+.datos ul li i {
+  padding-right: 5px;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+.logos img {
+  width: 20%;
 }
 
 .flex {
@@ -309,64 +311,10 @@ footer li a {
   background-color: white;
 }
 
-/* otros */
-.otros-card {
-  margin-top: 1rem;
-}
-
-/* info */
-.informacion {
-  background: rgb(46, 16, 10);
-  background: linear-gradient(90deg, rgb(46, 16, 10) 14%, rgb(102, 55, 42) 70%, rgb(153, 114, 99) 95%);
-  height: 7rem;
-}
-.informacion h1 {
-  color: white;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  padding-top: 1.5rem;
-}
-
-.contacto {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  list-style: none;
-  color: black;
-}
-
-.datos ul {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-}
-.datos ul li {
-  padding-right: 15px;
-  color: rgb(102, 55, 42);
-}
-.datos ul li i {
-  padding-right: 5px;
-}
-
-.logos {
-  background: rgb(46, 16, 10);
-  background: linear-gradient(90deg, rgb(46, 16, 10) 14%, rgb(102, 55, 42) 70%, rgb(153, 114, 99) 95%);
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 2rem;
-}
-.logos img {
-  width: 20%;
-}
-
 /* nosotros */
 .sobre-nosotros {
   height: 250px;
   display: flex;
-  background: rgb(46, 16, 10);
-  background: linear-gradient(90deg, rgb(46, 16, 10) 14%, rgb(102, 55, 42) 70%, rgb(153, 114, 99) 95%);
 }
 .sobre-nosotros h2 {
   color: white;
@@ -388,8 +336,6 @@ footer li a {
 }
 
 .cards-nosotros {
-  display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   padding: 1rem 0;
 }

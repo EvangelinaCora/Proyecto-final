@@ -15,12 +15,10 @@ html {
   }
   
   .columna-principal {
-    background: rgb(46, 16, 10);
-    background: linear-gradient(90deg, rgba(46, 16, 10, 1) 14%, rgba(102, 55, 42, 1) 70%, rgba(153, 114, 99, 1) 95%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
+    @extend %back-gradient;
+    @extend %flex_space;
+   
+    
     div {
       display: flex;
       flex-direction: column;
@@ -28,32 +26,30 @@ html {
     }
   
     h1 {
-      color: white;
-      font-family: "jost";
+      color: $color-claro;
+      font-family: $tipografia-1;
       font-size: 25px;
     }
   
     h2 {
-      color: white;
-      font-family: "Jost";
+      color: $color-claro;
+      font-family: $tipografia-1;
       font-size: 25px;
     }
   }
   
-  .blackpanter {
+  .tambor {
     width: 30%;
   }
   
   .columna-horizontal {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @extend %flex_space;
     height: 350px;
     background-image: url(../imagenes/tamaño-correcto/inicio/fondo\ gris.jpg);
   }
   
   .harry-inicio {
-    width: 40%;
+    width: 35%;
   }
   
   .descripcion-harry {
@@ -64,11 +60,11 @@ html {
     }
   
     a {
-      color: white;
+      color: $color-claro;
     }
   
     button {
-      color: white;
+      color: $color-claro;
       background-color: black;
       border-radius: 15px;
       text-decoration: none;
@@ -77,27 +73,18 @@ html {
   
   .boton-harry {
     text-decoration: none;
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: $color-oscuro;
+    font-family: $tipografia-1;
   
     &:hover {
-      background-color: white;
+      background-color: $color-claro;
   
       a {
-        color: black;
+        color: $color-oscuro;
       }
     }
   }
-  
-  .harry-prod {
-    img {
-      width: 16rem;
-      margin-left: 30rem;
-    }
-  
-    background-image: url(../imagenes/funko/proximamente/harry\ potter.jpg);
-    margin-bottom: 3rem;
-  }
+
   
   .container-funkos {
     display: grid;
@@ -106,8 +93,7 @@ html {
   }
   
   .columna {
-    display: flex;
-    align-items: center;
+    @extend %flex_space;
     height: 100%;
   }
   
@@ -132,53 +118,20 @@ html {
   }
   
   .batman {
-    color: white;
+    color: $color-claro;
   }
   
   main {
     h2, p {
-      font-family: "Jost", sans-serif;
+      font-family: $tipografia-1;
     }
   }
   
-  .proximamente {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: rgb(235, 131, 95);
-    background: linear-gradient(90deg, rgba(235, 131, 95, 1) 0%, rgba(236, 158, 105, 1) 32%, rgb(242, 186, 161) 100%);
-  }
-  
-  .inicio {
-    display: flex;
-    justify-content: space-evenly;
-  
-    img {
-      padding: 15px;
-    }
-  }
-  
-  .favoritos {
-    background-color: rgb(240, 207, 166);
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  
-    img {
-      padding: 15px;
-    }
-  
-    h2 {
-      width: 55%;
-    }
-  }
+
   
   section {
     h2 {
-      color: rgb(0, 0, 0);
+      color: $color-oscuro;
     }
   
     img {

@@ -1,0 +1,16 @@
+%flex_space{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+%flex_centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%back-gradient{
+    background: rgb(46, 16, 10);
+    background: linear-gradient(90deg, rgba(46, 16, 10, 1) 14%, rgba(102, 55, 42, 1) 70%, rgba(153, 114, 99, 1) 95%);
+}

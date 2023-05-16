@@ -1,31 +1,28 @@
 /* info */
 
 .informacion {
-    background: rgb(46, 16, 10);
-    background: linear-gradient(90deg, rgba(46, 16, 10, 1) 14%, rgba(102, 55, 42, 1) 70%, rgba(153, 114, 99, 1) 95%);
+  @extend %back-gradient;
     height: 7rem;
   
     h1 {
-      color: white;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      display: flex;
-      justify-content: center;
+      color: $color-claro;
+      font-family:  $tipografia-2;
+      @extend %flex_centrado;
       padding-top: 1.5rem;
     }
   }
   
   .contacto {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:  $tipografia-2;
     list-style: none;
-    color: black;
+    color: $color-oscuro;
   }
   
   .datos ul {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: $tipografia-4;
     font-size: 20px;
     list-style: none;
-    display: flex;
-    justify-content: space-between;
+    @extend %flex_space;
     padding: 0;
   
     li {
@@ -33,14 +30,13 @@
       color: rgb(102, 55, 42, 1);
   
       i {
-        padding-right: 5px;
+        padding-right: $medida-5;
       }
     }
   }
   
   .logos {
-    background: rgb(46, 16, 10);
-    background: linear-gradient(90deg, rgba(46, 16, 10, 1) 14%, rgba(102, 55, 42, 1) 70%, rgba(153, 114, 99, 1) 95%);
+    @extend %back-gradient;
     display: flex;
     justify-content: space-around;
     margin-bottom: 2rem;
@@ -48,4 +44,19 @@
     img {
       width: 20%;
     }
+  }
+
+  .flex {
+    /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .content {
+    position: relative;
+    height: 20vh;
+    text-align: center;
+    background-color: white;
   }
