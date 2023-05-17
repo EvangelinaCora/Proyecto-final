@@ -2,30 +2,30 @@
 
 .nav-link-name {
     font-family:  $tipografia-2;
-    font-size: 25px;
+    font-size: map-get($bs, "medida-5" );
     color: $color-claro;
-    list-style: none;
-    text-decoration: none;
-    padding: 8px;
+    list-style: map-get($bs, "estilo" );
+    text-decoration:  map-get($bs, "estilo" );
+    padding: map-get($bs, "medida-1" );
   }
   
   /* ayuda bs*/
   
   .main-acordion {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    padding-left: 50px;
-    padding-right: 50px;
+    margin-top:  map-get($bs, "medida-rem-1" ) ;
+    margin-bottom:  map-get($bs, "medida-rem-1" );
+    padding-left:  map-get($bs, "medida-6" );
+    padding-right: map-get($bs, "medida-6" );
   }
   
   .acordeon-boton {
     background-color: rgb(102, 55, 42, 1);
     color: $color-claro;
-    border: none;
+    border:  map-get($bs, "estilo" );
     font-family: $tipografia-3;
-    font-size: 25px;
-    border-radius: 8px;
-    padding-left: 10px;
+    font-size:  map-get($bs, "medida-5" );
+    border-radius:  map-get($bs, "medida-1" );
+    padding-left:  map-get($bs, "medida-1" );
   }
   
   .espacio-boton {

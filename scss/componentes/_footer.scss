@@ -1,29 +1,29 @@
 
 footer {
-    background-color: black;
+    background-color: map-get($footer , "back-color");
     @extend %flex_space;
     
     
   
     img {
-      padding-left: 1rem;
+      padding-left: map-get($footer, "medida-1");
     }
   
     ul {
       display: flex;
-      padding-right: 1rem;
+      padding-right: map-get($footer, "medida-1" );
   
       li {
         color: aliceblue;
         font-size: 100%;
-        list-style: none;
+        list-style: map-get($footer, "estilo" );
         padding: .4rem;
-        padding-top: 1.9rem;
+        padding-top: map-get($footer, "medida-5");
       }
     }
   
     i {
-      font-size: 2rem;
+      font-size: map-get($footer, "medida-2" );
     }
   
     li a {

@@ -18,7 +18,7 @@
 
 /* bs */
 .nav-link-name {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", sans-serif, "Arial Narrow", Arial;
   font-size: 25px;
   color: white;
   list-style: none;
@@ -41,7 +41,7 @@
   font-family: sans-serif;
   font-size: 25px;
   border-radius: 8px;
-  padding-left: 10px;
+  padding-left: 8px;
 }
 
 .espacio-boton {
@@ -213,18 +213,18 @@ footer li a {
 .prod-card h2 {
   padding-left: 8px;
   font-size: 25px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", sans-serif, "Arial Narrow", Arial;
 }
 .prod-card p {
   padding-left: 8px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", sans-serif, "Arial Narrow", Arial;
 }
 
 .boton-productos {
   margin-bottom: 15px;
   border-radius: 4px;
   background-color: rgb(243, 238, 238);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", sans-serif, "Arial Narrow", Arial;
 }
 
 .btn-comprar {
@@ -263,12 +263,12 @@ footer li a {
 }
 .informacion h1 {
   color: white;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", sans-serif, "Arial Narrow", Arial;
   padding-top: 1.5rem;
 }
 
 .contacto {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", sans-serif, "Arial Narrow", Arial;
   list-style: none;
   color: black;
 }
@@ -321,18 +321,18 @@ footer li a {
   font-size: 2rem;
   padding-left: 3rem;
   margin-top: 3rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", sans-serif, "Arial Narrow", Arial;
 }
 .sobre-nosotros h3 {
   color: white;
   font-size: 1.1rem;
   padding-left: 3rem;
   padding-right: 8rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", sans-serif, "Arial Narrow", Arial;
 }
 
 .pato-donald {
-  width: 100%;
+  width: 90%;
 }
 
 .cards-nosotros {
@@ -350,13 +350,13 @@ footer li a {
 }
 .card-nos img {
   width: 100%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", sans-serif, "Arial Narrow", Arial;
 }
 .card-nos h2 {
   font-size: 2rem;
   margin-left: 0.5rem;
   margin-top: 0.4rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", sans-serif, "Arial Narrow", Arial;
 }
 .card-nos h3 {
   font-size: 1rem;
@@ -366,7 +366,7 @@ footer li a {
   border-radius: 10px;
   background-color: black;
   color: white;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", sans-serif, "Arial Narrow", Arial;
   font-size: 1rem;
   margin-left: 0.5rem;
   margin-bottom: 1rem;
@@ -415,6 +415,9 @@ footer li a {
     padding: 0 1rem;
   }
   .acordeon-boton {
+    font-size: 1rem;
+  }
+  .respuesta-acordion {
     font-size: 1rem;
   }
   .sobre-nosotros h2 {

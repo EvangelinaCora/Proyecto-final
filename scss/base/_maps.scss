@@ -1,5 +1,23 @@
 $footer:(
-    bck-color: black
-    lista none
+  back-color: black,
+  medida-1: 1rem,
+  medida-2: 2rem,
+  medida-3: .4rem,
+  medida-4: 1.3rem,
+  medida-5: 1.9rem,
+  estilo: none,
+
+);
+
+$bs:(
+estilo: none,
+medida-1: 8px,
+medida-2: 10px,
+medida-3: 15px,
+medida-4: 20px,
+medida-5: 25px,
+medida-6: 50px,
+medida-rem-1: 3rem,
+
 
 )
