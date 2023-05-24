@@ -86,34 +86,30 @@ html {
   }
 
   
-  .container-funkos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-  }
-  
+ 
   .columna {
     @extend %flex_space;
     height: 100%;
   }
   
   .izquierda {
-    background-image: url("../imagenes/tamaño-correcto/inicio/fondo\ burbuja.jpg");
+    background-color: rgb(182, 202, 238);
   }
   
   .derecha {
     color: white;
-    background-image: url("../imagenes/tamaño-correcto/inicio/fondo\ brilloso.jpg");
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 14%, rgba(27,26,26,1) 81%, rgba(36,34,33,1) 95%);
   }
   
   .columna {
-    img {
-      height: 100%;
-      width: 55%;
-    }
+   
   
     .descripcion {
       margin-left: 3rem;
+    }
+    p{
+      font-size: 1.8rem;
     }
   }
   
@@ -138,5 +134,9 @@ html {
       width: 200px;
       height: 200px;
     }
+  }
+
+  .img{
+    width: 35%;
   }
  
