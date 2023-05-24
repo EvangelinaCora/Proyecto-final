@@ -17,15 +17,12 @@
       color: $color-claro;
       font-size: 1.1rem;
       padding-left: 3rem;
-      padding-right: 8rem;
+      padding-right: 2rem;
       font-family:  $tipografia-2;
     }
   }
   
-  .pato-donald {
-    width: 90%;
-   
-  }
+
   
   .cards-nosotros {
     @extend %flex_centrado;

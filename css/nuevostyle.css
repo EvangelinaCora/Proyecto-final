@@ -325,12 +325,8 @@ footer li a {
   color: white;
   font-size: 1.1rem;
   padding-left: 3rem;
-  padding-right: 8rem;
+  padding-right: 2rem;
   font-family: "Franklin Gothic Medium", sans-serif, "Arial Narrow", Arial;
-}
-
-.pato-donald {
-  width: 90%;
 }
 
 .cards-nosotros {
@@ -424,11 +420,6 @@ footer li a {
   }
   .sobre-nosotros h3 {
     font-size: 0.8rem;
-    padding-right: 0rem;
-  }
-  .pato-donald {
-    padding-top: 3.5rem;
-    width: 120%;
   }
   .card-nos {
     width: 40%;
