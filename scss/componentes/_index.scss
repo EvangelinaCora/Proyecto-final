@@ -46,10 +46,12 @@ main {
   @extend %flex_space;
   height: 350px;
   background-image: url(../imagenes/tamaño-correcto/inicio/fondo\ gris.jpg);
+  background-size: cover;
 }
 
 .harry-inicio {
-  width: 35%;
+  width: 25%;
+ 
 }
 
 .descripcion-harry {
