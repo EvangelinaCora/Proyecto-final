@@ -160,7 +160,8 @@ main {
   color: white;
 }
 
-main h2, main p {
+main h2,
+main p {
   font-family: "Jost", sans-serif;
 }
 
@@ -331,7 +332,7 @@ footer li a {
 
 .cards-nosotros {
   flex-wrap: wrap;
-  padding: 1rem 0;
+  padding: 6% 0;
 }
 
 .card-nos {

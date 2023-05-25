@@ -1,142 +1,144 @@
 /* index */
 
 html {
-    height: 100%;
-  }
-  
-  body {
-    margin: 0;
-    height: 100%;
-  }
-  
-  main {
-    background-color: white;
-    background-repeat: repeat;
-  }
-  
-  .columna-principal {
-    @extend %back-gradient;
-    @extend %flex_space;
-   
-    
-    div {
-      display: flex;
-      flex-direction: column;
-      margin-left: 3rem;
-    }
-  
-    h1 {
-      color: $color-claro;
-      font-family: $tipografia-1;
-      font-size: 25px;
-    }
-  
-    h2 {
-      color: $color-claro;
-      font-family: $tipografia-1;
-      font-size: 25px;
-    }
-  }
-  
-  .tambor {
-    width: 30%;
-  }
-  
-  .columna-horizontal {
-    @extend %flex_space;
-    height: 350px;
-    background-image: url(../imagenes/tamaño-correcto/inicio/fondo\ gris.jpg);
-  }
-  
-  .harry-inicio {
-    width: 35%;
-  }
-  
-  .descripcion-harry {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+main {
+  background-color: white;
+  background-repeat: repeat;
+}
+
+.columna-principal {
+  @extend %back-gradient;
+  @extend %flex_space;
+
+
+  div {
+    display: flex;
+    flex-direction: column;
     margin-left: 3rem;
-  
-    p {
-      font-size: 20px;
-    }
-  
-    a {
-      color: $color-claro;
-    }
-  
-    button {
-      color: $color-claro;
-      background-color: black;
-      border-radius: 15px;
-      text-decoration: none;
-    }
-  }
-  
-  .boton-harry {
-    text-decoration: none;
-    color: $color-oscuro;
-    font-family: $tipografia-1;
-  
-    &:hover {
-      background-color: $color-claro;
-  
-      a {
-        color: $color-oscuro;
-      }
-    }
   }
 
-  
- 
-  .columna {
-    @extend %flex_space;
-    height: 100%;
+  h1 {
+    color: $color-claro;
+    font-family: $tipografia-1;
+    font-size: 25px;
   }
-  
-  .izquierda {
-    background-color: rgb(182, 202, 238);
+
+  h2 {
+    color: $color-claro;
+    font-family: $tipografia-1;
+    font-size: 25px;
   }
-  
-  .derecha {
-    color: white;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 14%, rgba(27,26,26,1) 81%, rgba(36,34,33,1) 95%);
+}
+
+.tambor {
+  width: 30%;
+}
+
+.columna-horizontal {
+  @extend %flex_space;
+  height: 350px;
+  background-image: url(../imagenes/tamaño-correcto/inicio/fondo\ gris.jpg);
+}
+
+.harry-inicio {
+  width: 35%;
+}
+
+.descripcion-harry {
+  margin-left: 3rem;
+
+  p {
+    font-size: 20px;
   }
-  
-  .columna {
-   
-  
-    .descripcion {
-      margin-left: 3rem;
-    }
-    p{
-      font-size: 1.8rem;
-    }
-  }
-  
-  .batman {
+
+  a {
     color: $color-claro;
   }
-  
-  main {
-    h2, p {
-      font-family: $tipografia-1;
-    }
-  }
-  
 
-  
-  section {
-    h2 {
+  button {
+    color: $color-claro;
+    background-color: black;
+    border-radius: 15px;
+    text-decoration: none;
+  }
+}
+
+.boton-harry {
+  text-decoration: none;
+  color: $color-oscuro;
+  font-family: $tipografia-1;
+
+  &:hover {
+    background-color: $color-claro;
+
+    a {
       color: $color-oscuro;
     }
-  
-    img {
-      width: 200px;
-      height: 200px;
-    }
+  }
+}
+
+
+
+.columna {
+  @extend %flex_space;
+  height: 100%;
+}
+
+.izquierda {
+  background-color: rgb(182, 202, 238);
+}
+
+.derecha {
+  color: white;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 14%, rgba(27, 26, 26, 1) 81%, rgba(36, 34, 33, 1) 95%);
+}
+
+.columna {
+
+
+  .descripcion {
+    margin-left: 3rem;
   }
 
-  .img{
-    width: 35%;
+  p {
+    font-size: 1.8rem;
   }
- 
+}
+
+.batman {
+  color: $color-claro;
+}
+
+main {
+
+  h2,
+  p {
+    font-family: $tipografia-1;
+  }
+}
+
+
+
+section {
+  h2 {
+    color: $color-oscuro;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.img {
+  width: 35%;
+}
