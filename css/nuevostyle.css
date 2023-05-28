@@ -267,12 +267,6 @@ footer li a {
   padding-top: 1.5rem;
 }
 
-.contacto {
-  font-family: "Franklin Gothic Medium", sans-serif, "Arial Narrow", Arial;
-  list-style: none;
-  color: black;
-}
-
 .datos ul {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
@@ -402,9 +396,6 @@ footer li a {
   }
   .prod-card p {
     padding-left: 8px;
-  }
-  .container-funkos {
-    grid-template-columns: repeat(1, 1fr);
   }
   .harry-potter {
     font-size: 3.5rem;
