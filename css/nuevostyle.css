@@ -26,6 +26,11 @@
   padding: 8px;
 }
 
+.color-btn {
+  color: red;
+  height: 100px;
+}
+
 /* ayuda bs*/
 .main-acordion {
   margin-top: 3rem;
