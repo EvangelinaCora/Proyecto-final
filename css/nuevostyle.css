@@ -26,11 +26,6 @@
   padding: 8px;
 }
 
-.color-btn {
-  color: red;
-  height: 100px;
-}
-
 /* ayuda bs*/
 .main-acordion {
   margin-top: 3rem;
@@ -181,6 +176,29 @@ section img {
 
 .img {
   width: 35%;
+}
+
+#alerta {
+  position: fixed;
+  left: 50%;
+  top: 20%;
+}
+
+.alerta-container {
+  border-radius: 10px;
+  height: 300px;
+  width: 220px;
+  position: relative;
+  left: -50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(2px);
+  box-shadow: 3px 11px 10px 2px rgba(0, 0, 0, 0.48);
+  -webkit-box-shadow: 3px 11px 10px 2px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 3px 11px 10px 2px rgba(0, 0, 0, 0.48);
 }
 
 footer {
