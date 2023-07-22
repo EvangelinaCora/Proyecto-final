@@ -20,93 +20,61 @@
 
 // calcularCompra()
 
-const alertaContenedor = document.getElementById("alerta")
 
-const carrito = [
-    {
-        id: 1,
-        nombre: "Ironman",
-        precio: 14000
+const alertaContenedor = document.getElementById("alerta");
+const carrito = [];
 
-    },
-    {
-        id: 2,
-        nombre: "Spiderman",
-        precio: 12000
+class Funko {
+    constructor(id, nombre, precio){
+        this.id = id;
+        this.nombre = nombre;
+        this.precio = precio
+    }
+}
 
-    },
-    {
-        id: 3,
-        nombre: "Harry potter",
-        precio: 15000
+const ironman = new Funko(1, "Ironman", 15000);
+const spiderman = new Funko(2, "Spiderman", 12000);
+const harryPotter = new Funko(3, "Harry Potter", 15000);
+const hermione = new Funko(4, "Hermione", 13000);
+const chewbacca = new Funko(5, "Chewbacca", 10000);
+const darthVader = new Funko(6, "Darth Vader", 15000);
+const mickey = new Funko(7, "Mickey", 15000);
+const cenicienta = new Funko(8, "Cenicienta", 15000);
 
-    },
-    {
-        id: 4,
-        nombre: "Hermione",
-        precio: 13000
+carrito.push(ironman,spiderman,harryPotter,hermione,chewbacca,darthVader,mickey,cenicienta);
 
-    },
-    {
-        id: 5,
-        nombre: "Chewbacca",
-        precio: 10000
-
-    },
-    {
-        id: 6,
-        nombre: "Darth vader",
-        precio: 15000
-
-    },
-    {
-        id: 7,
-        nombre: "Mickey",
-        precio: 15000
-
-    },
-    {
-        id: 8,
-        nombre: "Cenicienta",
-        precio: 15000
-
-    },
-
-]
-
+console.log(carrito);
 
 function mostrarAlert() {
+  const funkoUsuario = prompt("¿Qué funko pop estás buscando?");
 
-    const funkoUsuario = prompt("¿Qué funko pop estás buscando?");
+  const funkoFiltrado = carrito.filter(function (funko) {
+    return funko.nombre.toLowerCase() === funkoUsuario.toLowerCase();
+  });
 
-    const funkoFiltrado = carrito.filter(function (funko) {
-        return funko.nombre.toLowerCase() === funkoUsuario.toLowerCase();
-    });
-
-    if (funkoFiltrado.length > 0) {
-        console.log(funkoFiltrado);
-        alertaContenedor.innerHTML = `
+  if (funkoFiltrado.length > 0) {
+    console.log(funkoFiltrado);
+    alertaContenedor.innerHTML = `
         <div class="alerta-container">
         <h1>${funkoFiltrado[0].nombre}</h1>
          <span>$${funkoFiltrado[0].precio}</span>
         </div>
-        `
-        console.log(funkoFiltrado);
-    } else {
-        alertaContenedor.innerHTML = `
+        `;
+    console.log(funkoFiltrado);
+  } else {
+    alertaContenedor.innerHTML = `
         <div class="alerta-container">
         <h4 style="text-align: center">No tenemos ningun funko pop con ese nombre</h4>
         </div>
-        `
-    }
+        `;
+  }
 
-    setTimeout(() => {
-        alertaContenedor.innerHTML = ""
-    }, 3000);
+  setTimeout(() => {
+    alertaContenedor.innerHTML = "";
+  }, 3000);
 }
 
-mostrarAlert()
-
+mostrarAlert();
 
 
 
