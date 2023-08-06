@@ -1,4 +1,3 @@
-
 const funkos = [];
 const carrito = [];
 
@@ -28,7 +27,7 @@ const Loki = new FunkosProductos("../imagenes/tamaño-correcto/marvel/loki-1.png
 const Thanos = new FunkosProductos("../imagenes/tamaño-correcto/marvel/thanos-1.png", "Pop! Thanos", 12000, 14)
 
 funkos.push(Wanda, Spiderman, Ironman, Thor, DoctorStrange, StarLord, Gamora, Groot, Rocket, Mantis, BlackPanter, AntMan, Loki, Thanos);
-// Función para inicializar la tienda
+
 
 function mostrarFunkos() {
     const funkosContainer = document.querySelector('.funkos-marvel');
@@ -54,33 +53,49 @@ function mostrarFunkos() {
         funkosContainer.appendChild(funkocard);
 
     })
-
-    function agregarAlCarrito(evento) {
-        const prodCard = evento.target.closest('.prod-card');
-        const idProducto = parseInt(prodCard.dataset.id);
-        const nombreProducto = prodCard.querySelector('p:nth-child(2)').textContent.trim();
-        const precioProducto = parseInt(prodCard.querySelector('.precio').textContent.slice(1));
-        // Buscar si el producto ya está en el carrito
-        const productoEnCarrito = carrito.find(item => item.id === idProducto);
-
-        productoEnCarrito ?  productoEnCarrito.cantidad += 1 :  carrito.push({
-            id: idProducto,
-            nombre: nombreProducto,
-            precio: precioProducto,
-            cantidad: 1,
-        });
-
-        localStorage.setItem("carrito", JSON.stringify(carrito) )
-        console.log(carrito);
-    }
-
     const botonesAgregar = document.getElementsByClassName('boton-productos');
     for (const button of botonesAgregar) {
         button.addEventListener('click', agregarAlCarrito);
     }
+
+}
+// Función para inicializar la tienda
+function agregarAlCarrito(evento) {
+
+    const prodCard = evento.target.closest('.prod-card');
+    const idProducto = parseInt(prodCard.dataset.id);
+    const nombreProducto = prodCard.querySelector('p:nth-child(2)').textContent.trim();
+    const precioProducto = parseInt(prodCard.querySelector('.precio').textContent.slice(1));
+    // Buscar si el producto ya está en el carrito
+    const productoEnCarrito = carrito.find(item => item.id === idProducto);
+
+    productoEnCarrito ? productoEnCarrito.cantidad += 1 : carrito.push({
+        id: idProducto,
+        nombre: nombreProducto,
+        precio: precioProducto,
+        cantidad: 1,
+    });
+
+    localStorage.setItem("carrito", JSON.stringify(carrito))
+    // Recuperar dato
+    const miDatoRecuperado = JSON.parse(localStorage.getItem('carrito'));
+    console.log(miDatoRecuperado.length);
+
+    Swal.fire({
+        icon: 'success',
+        title: 'Maravilloso!',
+        text: `El Funko ${nombreProducto.toLowerCase()} ha sido agregado al carrito(${miDatoRecuperado.length}) `,
+        timer: 2000,
+        showConfirmButton: false,
+        width: '360px',
+    });
+
 }
 
+
 mostrarFunkos()
+
+
 
 
 
