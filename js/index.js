@@ -1,15 +1,16 @@
+let carrito = [];
 const funkos = [];
-const carrito = [];
+
+
 
 class FunkosProductos {
-    constructor(img, nombre, precio, id) {
-        this.img = img;
-        this.nombre = nombre;
-        this.precio = precio;
-        this.id = id;
-    }
+  constructor(img, nombre, precio, id) {
+    this.img = img;
+    this.nombre = nombre;
+    this.precio = precio;
+    this.id = id;
+  }
 }
-
 
 const Wanda = new FunkosProductos("../imagenes/tamaño-correcto/marvel/wanda.png", "Pop! Wanda", 10000, 1)
 const Spiderman = new FunkosProductos("../imagenes/tamaño-correcto/marvel/spiderman1.png", "Pop! Spiderman", 12000, 2)
@@ -21,24 +22,20 @@ const Gamora = new FunkosProductos("../imagenes/tamaño-correcto/marvel/gamora-1
 const Groot = new FunkosProductos("../imagenes/tamaño-correcto/marvel/groot.png", "Pop! Baby Groot", 10000, 8)
 const Rocket = new FunkosProductos("../imagenes/tamaño-correcto/marvel/rocket-1.png", "Pop! Rocket", 9000, 9)
 const Mantis = new FunkosProductos("../imagenes/tamaño-correcto/marvel/mantis-1.png", "Pop! Mantis", 7000, 10)
-const BlackPanter = new FunkosProductos("../imagenes/tamaño-correcto/marvel/black-panter.png", "Pop! BlackPanter", 12000, 11)
-const AntMan = new FunkosProductos("../imagenes/tamaño-correcto/marvel/ant-man.png", "Pop! Antman", 10000, 12)
-const Loki = new FunkosProductos("../imagenes/tamaño-correcto/marvel/loki-1.png", "Pop! Loki", 14000, 13)
-const Thanos = new FunkosProductos("../imagenes/tamaño-correcto/marvel/thanos-1.png", "Pop! Thanos", 12000, 14)
-
-funkos.push(Wanda, Spiderman, Ironman, Thor, DoctorStrange, StarLord, Gamora, Groot, Rocket, Mantis, BlackPanter, AntMan, Loki, Thanos);
 
 
+funkos.push(Wanda, Spiderman, Ironman, Thor, DoctorStrange, StarLord, Gamora, Groot, Rocket, Mantis);
+
+// visualizar cards de marvel
 function mostrarFunkos() {
-    const funkosContainer = document.querySelector('.funkos-marvel');
+  const funkosContainer = document.querySelector(".funkos-marvel");
 
-    funkos.map((funko) => {
-        const funkocard = document.createElement('div');
-        funkocard.innerHTML =
-            `
+  funkos.map((funko) => {
+    const funkocard = document.createElement("div");
+    funkocard.innerHTML = `
        <div class="prod-card" data-id=${funko.id}>
             <div>
-                <img src= ${funko.img} />
+                <img class="funko-img" src= ${funko.img} />
             </div>
             <div>
                 <h2>MARVEL</h2>
@@ -50,59 +47,142 @@ function mostrarFunkos() {
                 </div>
             </div>
         </div> `;
-        funkosContainer.appendChild(funkocard);
-
-    })
-    const botonesAgregar = document.getElementsByClassName('boton-productos');
-    for (const button of botonesAgregar) {
-        button.addEventListener('click', agregarAlCarrito);
-    }
-
+    funkosContainer.appendChild(funkocard);
+  });
+  const botonesAgregar = document.getElementsByClassName("boton-productos");
+  for (const button of botonesAgregar) {
+    button.addEventListener("click", agregarAlCarrito);
+  }
 }
 // Función para inicializar la tienda
 function agregarAlCarrito(evento) {
+  const prodCard = evento.target.closest(".prod-card");
+  const idProducto = parseInt(prodCard.dataset.id);
 
-    const prodCard = evento.target.closest('.prod-card');
-    const idProducto = parseInt(prodCard.dataset.id);
-    const nombreProducto = prodCard.querySelector('p:nth-child(2)').textContent.trim();
-    const precioProducto = parseInt(prodCard.querySelector('.precio').textContent.slice(1));
-    // Buscar si el producto ya está en el carrito
-    const productoEnCarrito = carrito.find(item => item.id === idProducto);
-
-    productoEnCarrito ? productoEnCarrito.cantidad += 1 : carrito.push({
-        id: idProducto,
-        nombre: nombreProducto,
-        precio: precioProducto,
-        cantidad: 1,
+  console.log(idProducto);
+  const productoEnCarrito = carrito.find((item) => item.id === idProducto);
+  console.log(productoEnCarrito);
+  if (productoEnCarrito) {
+    console.log(carrito);
+    productoEnCarrito.cantidad += 1;
+  } else {
+    const nombreProducto = prodCard
+      .querySelector("p:nth-child(2)")
+      .textContent.trim();
+    const precioProducto = parseInt(
+      prodCard.querySelector(".precio").textContent.slice(1)
+    );
+    const funkoImagen = prodCard.querySelector(".funko-img").src;
+    console.log({ nombreProducto,});
+    carrito.push({
+      id: idProducto,
+      nombre: nombreProducto,
+      precio: precioProducto,
+      cantidad: 1,
+      imagen: funkoImagen,
     });
+    console.log(carrito);
+  }
 
-    localStorage.setItem("carrito", JSON.stringify(carrito))
-    // Recuperar dato
-    const miDatoRecuperado = JSON.parse(localStorage.getItem('carrito'));
-    console.log(miDatoRecuperado.length);
+  localStorage.setItem("carrito", JSON.stringify(carrito));
+  mostrarCarrito();
+//   Recuperar dato
+  const miDatoRecuperado = JSON.parse(localStorage.getItem("carrito"));
+  const nuevoProducto = miDatoRecuperado[miDatoRecuperado.length - 1];
+  mostrarNotificacion(nuevoProducto.nombre, nuevoProducto.cantidad);
+}
 
-    Swal.fire({
-        icon: 'success',
-        title: 'Maravilloso!',
-        text: `El Funko ${nombreProducto.toLowerCase()} ha sido agregado al carrito(${miDatoRecuperado.length}) `,
-        timer: 2000,
-        showConfirmButton: false,
-        width: '360px',
-    });
+// Carrito
+function mostrarCarrito() {
+  carritoContenedor.innerHTML = ""; 
+  const miDatoRecuperado = JSON.parse(localStorage.getItem("carrito"));
 
+  miDatoRecuperado.forEach((funko) => {
+    const funkocard = document.createElement("div");
+    funkocard.innerHTML = `
+       <div data-id=${funko.id}>
+            <div class=div-js>
+            <img class=img-js src=${funko.imagen} />
+            
+                <p class=nombre-js> ${funko.nombre.toUpperCase()}</p>
+                
+                <p class="precio precio-js">$${funko.precio}</p>
+                <p class="cantidad cantidad-js">Cantidad: ${funko.cantidad}</p>
+                <button class="eliminar-producto boton-js">
+                <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+        </div> `;
+    carritoContenedor.appendChild(funkocard);
+
+    const botonEliminar = funkocard.querySelector(".eliminar-producto");
+    botonEliminar.addEventListener("click", () => eliminarProducto(funko.id));
+  });
+}
+
+function eliminarProducto(idProducto) {
+  const productoEnCarrito = carrito.find((item) => item.id === idProducto);
+
+  if (productoEnCarrito) {
+    if (productoEnCarrito.cantidad > 1) {
+      productoEnCarrito.cantidad -= 1;
+    } else {
+      carrito = carrito.filter((item) => item.id !== idProducto);
+    }
+    
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+    mostrarCarrito();
+  }
 }
 
 
-mostrarFunkos()
+function mostrarNotificacion(nombreProducto, cantidadProductos) {
+    Toastify({
+        text: `El Funko ${nombreProducto.toLowerCase()} ha sido agregado al carrito (${cantidadProductos}) `,
+        duration: 3000,
+        style: {
+            color: "black",
+        },
+        backgroundColor: "white"
+    }).showToast()
+}
 
+const carritoContenedor = document.querySelector(".cart-dropdown");
 
+// Abrir y cerrar carrito
+document.addEventListener("DOMContentLoaded", function () {
+  const cartIcon = document.getElementById("cart-icon");
+  const cartDropdown = document.getElementById("cart-dropdown");
 
+  // Manejar clics en el icono del carrito
+  cartIcon.addEventListener("click", function (event) {
+    event.stopPropagation(); 
+    cartDropdown.classList.toggle("active");
+  });
 
+  // Manejar clics en cualquier parte del documento
+  document.addEventListener("click", function (event) {
+    const isCartIconClicked = event.target === cartIcon;
+    const isCartDropdownClicked = cartDropdown.contains(event.target);
 
+    if (!isCartIconClicked && !isCartDropdownClicked) {
+      cartDropdown.classList.remove("active");
+    }
+  });
 
+ // Manejar clics en los botones de eliminar dentro del carrito
+   cartDropdown.addEventListener("click", function (event) {
+    if (event.target.classList.contains("eliminar-producto")) {
+      event.stopPropagation();
+  
+      const idProducto = parseInt(event.target.closest(".prod-card").getAttribute("data-id"));
+      eliminarProducto(idProducto);
+    }
+  });
+  
+});
 
-
-
+mostrarFunkos(); 
 
 
 

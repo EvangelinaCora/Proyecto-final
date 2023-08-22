@@ -1,0 +1,250 @@
+[
+    {
+        "id": 15,
+        "empresa": "HARRY POTTER",
+        "nombre": "POP! Harry Potter",
+        "precio": 15000,
+        "img": "../imagenes/tamaño-correcto/harry-potter/harry-potter-1.png"
+    },
+
+    {
+        "id": 16,
+        "empresa": "HARRY POTTER",
+        "nombre": "POP! Hermione",
+        "precio": 13000,
+        "img": "../imagenes/tamaño-correcto/harry-potter/hermione.png"
+    },
+
+    {
+        "id": 17,
+        "empresa": "HARRY POTTER",
+        "nombre": "POP! Ron wesley",
+        "precio": 12000,
+        "img": "../imagenes/tamaño-correcto/harry-potter/ron.png"
+    },
+
+    {
+        "id": 18,
+        "empresa": "HARRY POTTER",
+        "nombre": "POP! Fred and George",
+        "precio": 10000,
+        "img": "../imagenes/tamaño-correcto/harry-potter/fred.png"
+    },
+
+    {
+        "id": 19,
+        "empresa": "HARRY POTTER",
+        "nombre": "POP! Luna lovegood",
+        "precio": 10000,
+        "img": "../imagenes/tamaño-correcto/harry-potter/luna-lovegood.png"
+    },
+
+    {
+        "id": 20,
+        "empresa": "HARRY POTTER",
+        "nombre": "POP! Dobby",
+        "precio": 14000,
+        "img": "../imagenes/tamaño-correcto/harry-potter/dobby.png"
+    },
+
+    {
+        "id": 21,
+        "empresa": "HARRY POTTER",
+        "nombre": "POP! Hedwig",
+        "precio": 8000,
+        "img": "../imagenes/tamaño-correcto/harry-potter/hedwig.png"
+    },
+
+    {
+        "id": 22,
+        "empresa": "HARRY POTTER",
+        "nombre": "POP! Albus dumbledore",
+        "precio": 10000,
+        "img": "../imagenes/tamaño-correcto/harry-potter/albus-dumbledore.png"
+    },
+
+    {
+        "id": 23,
+        "empresa": "HARRY POTTER",
+        "nombre": "POP! Sirius black",
+        "precio": 10000,
+        "img": "../imagenes/tamaño-correcto/harry-potter/sirius-black.png"
+    },
+
+    {
+        "id": 24,
+        "empresa": "HARRY POTTER",
+        "nombre": "POP! Harry widditch",
+        "precio": 13000,
+        "img": "../imagenes/tamaño-correcto/harry-potter/harry-potter-quidditch.png"
+    },
+
+    {
+        "id": 25,
+        "empresa": "STAR WARS",
+        "nombre": "POP! Chewbacca",
+        "precio": 10000,
+        "img": "../imagenes/tamaño-correcto/star-wars/chewbacca.png"
+    },
+
+    {
+        "id": 26,
+        "empresa": "STAR WARS",
+        "nombre": "POP! Darth vader",
+        "precio": 15000,
+        "img": "../imagenes/tamaño-correcto/star-wars/darth-vader.png"
+    },
+
+    {
+        "id": 27,
+        "empresa": "STAR WARS",
+        "nombre": "POP! Stormtrooper",
+        "precio": 10000,
+        "img": "../imagenes/tamaño-correcto/star-wars/stormtrooper.png"
+    },
+
+
+    {
+        "id": 28,
+        "empresa": "STAR WARS",
+        "nombre": "POP! The mandalorian",
+        "precio": 14000,
+        "img": "../imagenes/tamaño-correcto/star-wars/the-mandalorian.png"
+    },
+
+    {
+        "id": 29,
+        "empresa": "STAR WARS",
+        "nombre": "POP! R2-D2",
+        "precio": 12000,
+        "img": "../imagenes/tamaño-correcto/star-wars/R2-D2.png"
+    },
+
+    {
+        "id": 30,
+        "empresa": "STAR WARS",
+        "nombre": "POP! Leia",
+        "precio": 14000,
+        "img": "../imagenes/tamaño-correcto/star-wars/leia.png"
+    },
+
+    {
+        "id": 31,
+        "empresa": "STAR WARS",
+        "nombre": "POP! Luke skywalker",
+        "precio": 15000,
+        "img": "../imagenes/tamaño-correcto/star-wars/luke-skywalker.png"
+    },
+
+    {
+        "id": 32,
+        "empresa": "STAR WARS",
+        "nombre": "POP! Obi wan",
+        "precio": 14000,
+        "img": "../imagenes/tamaño-correcto/star-wars/obi-wan.png"
+    },
+
+    {
+        "id": 33,
+        "empresa": "STAR WARS",
+        "nombre": "POP! Padme",
+        "precio": 18000,
+        "img": "../imagenes/tamaño-correcto/star-wars/padme.png"
+    },
+
+    {
+        "id": 34,
+        "empresa": "STAR WARS",
+        "nombre": "POP! Rey",
+        "precio": 13000,
+        "img": "../imagenes/tamaño-correcto/star-wars/rey.png"
+    },
+
+    {
+        "id": 35,
+        "empresa": "DISNEY",
+        "nombre": "POP! Mickey mouse",
+        "precio": 15000,
+        "img": "../imagenes/tamaño-correcto/disney/mickey.png"
+    },
+
+    {
+        "id": 36,
+        "empresa": "DISNEY",
+        "nombre": "POP! Minnie",
+        "precio": 14000,
+        "img": "../imagenes/tamaño-correcto/disney/minnie.png"
+    },
+
+    {
+        "id": 37,
+        "empresa": "DISNEY",
+        "nombre": "POP! Donald duck",
+        "precio": 15000,
+        "img": "../imagenes/tamaño-correcto/disney/donald-duck.png"
+    },
+
+
+    {
+        "id": 38,
+        "empresa": "DISNEY",
+        "nombre": "POP! Daisy",
+        "precio": 10000,
+        "img": "../imagenes/tamaño-correcto/disney/daisy.png"
+    },
+
+
+    {
+        "id": 39,
+        "empresa": "DISNEY",
+        "nombre": "POP! Goofy",
+        "precio": 12000,
+        "img": "../imagenes/tamaño-correcto/disney/goofy.png"
+    },
+
+
+    {
+        "id": 40,
+        "empresa": "DISNEY",
+        "nombre": "POP! Pluto",
+        "precio": 10000,
+        "img": "../imagenes/tamaño-correcto/disney/pluto.png"
+    },
+
+
+    {
+        "id": 41,
+        "empresa": "DISNEY",
+        "nombre": "POP! Lilo",
+        "precio": 15000,
+        "img": "../imagenes/tamaño-correcto/disney/lilo.png"
+    },
+
+
+    {
+        "id": 42,
+        "empresa": "DISNEY",
+        "nombre": "POP! Stitch",
+        "precio": 10000,
+        "img": "../imagenes/tamaño-correcto/disney/stitch.png"
+    },
+
+
+    {
+        "id": 43,
+        "empresa": "DISNEY",
+        "nombre": "POP! Belle",
+        "precio": 16000,
+        "img": "../imagenes/tamaño-correcto/disney/princess-belle.png"
+    },
+
+    {
+        "id": 44,
+        "empresa": "DISNEY",
+        "nombre": "POP! Rapunzel",
+        "precio": 15000,
+        "img": "../imagenes/tamaño-correcto/disney/princess-rapunzel.png"
+    }
+
+
+]

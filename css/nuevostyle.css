@@ -460,4 +460,94 @@ footer li a {
   }
 }
 
-/*# sourceMappingURL=nuevostyle.css.map */
+
+
+.nombre-form{
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.email-form{
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+  margin-top: 8px;
+  border-radius: 10px;
+}
+
+.boton-form{
+  margin-top: 1rem;
+  font-family: "Jost", sans-serif;
+  border-radius: 15px;
+}
+
+.cart-container{
+  margin-left: 1rem;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.cart-icon {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+
+  .cart-dropdown {
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    color: #333;
+    border: 1px solid #333;
+    padding: 10px;
+    display: none;
+    height: 500px;
+    overflow-y: scroll;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  .fa-shopping-cart{
+    color: white !important;
+  }
+
+
+}
+
+
+
+.div-js {
+  display: flex;
+  flex-direction: column; 
+}
+
+.img-js {
+  max-width: 200px;
+  margin-right: 10px;
+}
+
+.nombre-js,
+.precio-js,
+.cantidad-js {
+  margin: 1px 0; 
+}
+
+.boton-js {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.boton-js i {
+  margin-right: 5px;
+}
+
+
