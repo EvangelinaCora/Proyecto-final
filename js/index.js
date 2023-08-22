@@ -141,9 +141,9 @@ function mostrarNotificacion(nombreProducto, cantidadProductos) {
         text: `El Funko ${nombreProducto.toLowerCase()} ha sido agregado al carrito (${cantidadProductos}) `,
         duration: 3000,
         style: {
-            color: "black",
-        },
-        backgroundColor: "white"
+          color: "black",
+          background: "white"
+      },
     }).showToast()
 }
 

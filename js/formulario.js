@@ -12,8 +12,8 @@ formulario.addEventListener('submit', (event) => {
                 duration: 3000,
                 style: {
                     color: "black",
+                    background: "white"
                 },
-                backgroundColor: "white"
             }).showToast();
             break;
 
@@ -23,8 +23,8 @@ formulario.addEventListener('submit', (event) => {
                 duration: 3000,
                 style: {
                     color: "black",
+                    background: "white"
                 },
-                backgroundColor: "white"
             }).showToast();
             break;
 
@@ -34,8 +34,9 @@ formulario.addEventListener('submit', (event) => {
                 duration: 3000,
                 style: {
                     color: "black",
+                    background: "white"
                 },
-                backgroundColor: "white"
+               
             }).showToast();
             break;
     }
